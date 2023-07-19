@@ -1,6 +1,6 @@
 {
   "name": "kingcwt-ui-color-selector",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "lib/main.js",
   "module": "lib/main.mjs",
