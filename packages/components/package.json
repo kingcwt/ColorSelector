@@ -1,0 +1,29 @@
+{
+  "name": "kingcwt-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/main.js",
+  "module": "lib/main.mjs",
+  "scripts": {
+    "build": "vite build"
+  },
+  "files": [
+    "es",
+    "lib"
+  ],
+  "keywords": [
+    "kingcwt",
+    "color-picker",
+    "color",
+    "Color Selector"
+  ],
+  "author": "kingcwt",
+  "license": "MIT",
+  "typings": "lib/index.d.ts",
+  "dependencies": {
+    "@kingcwt-ui/utils": "workspace:^"
+  },
+  "devDependencies": {
+    "vite-plugin-dts": "^3.3.1"
+  }
+}

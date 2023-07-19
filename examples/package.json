@@ -1,0 +1,27 @@
+{
+  "name": "vdemo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "kingcwt-ui": "workspace:^",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.195",
+    "@types/tinycolor2": "^1.4.3",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vitejs/plugin-vue-jsx": "^3.0.1",
+    "ant-design-vue": "^4.0.0",
+    "lodash": "^4.17.21",
+    "tinycolor2": "^1.6.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.0",
+    "vue-tsc": "^1.8.3"
+  }
+}
