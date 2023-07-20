@@ -38,7 +38,7 @@ export default defineConfig({
       ],
     },
     lib: {
-      entry: "./index.ts",
+      entry: "./src/index.ts",
       formats: ["es","cjs"],
     },
   },
@@ -49,11 +49,11 @@ export default defineConfig({
       enableObjectSlots: false,
     }),
       dts({
-        tsconfigPath:"../../tsconfig.json"
+        tsconfigPath:"./tsconfig.json"
     }),
       dts({
         outputDir: "lib",
-        tsconfigPath:"../../tsconfig.json"
+        tsconfigPath:"./tsconfig.json"
     }),
     dts(),
   ],

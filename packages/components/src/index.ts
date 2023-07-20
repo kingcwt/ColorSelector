@@ -1,6 +1,5 @@
-import ColorSelector from './ColorSelector'
+// import ColorSelector from './ColorSelector'
 
 
-export {
-    ColorSelector
-}
+
+export { default as ColorSelector } from './ColorSelector';
