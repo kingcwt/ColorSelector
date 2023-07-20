@@ -17,12 +17,12 @@ export default defineConfig({
       input: ["./src/index.ts"],
       output: [
         {
+          dir: "es",
           format: "es",
           entryFileNames: "[name].js",
           //让打包目录和我们目录对应
           preserveModules: true,
           //配置打包根目录
-          dir: "es",
           preserveModulesRoot: "src",
         },
         {

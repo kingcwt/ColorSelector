@@ -1,13 +1,13 @@
 {
   "name": "kingcwt-ui-color-selector",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "",
   "scripts": {
     "build": "vite build",
     "module":"es/index.js"
   },
   "files": [
-    "es/src"
+    "es/**"
   ],
   "keywords": [
     "kingcwt",
