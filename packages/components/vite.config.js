@@ -48,13 +48,11 @@ export default defineConfig({
       mergeProps: false,
       enableObjectSlots: false,
     }),
-      dts({
-        tsconfigPath:"./tsconfig.json"
-    }),
-      dts({
-        outputDir: "lib",
-        tsconfigPath:"./tsconfig.json"
-    }),
+      dts(),
+    //   dts({
+    //     outputDir: "lib",
+    //     tsconfigPath:"./tsconfig.json"
+    // }),
     dts(),
   ],
 });
