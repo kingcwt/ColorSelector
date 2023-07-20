@@ -1,5 +1,5 @@
 import { defineComponent, toRefs, computed, ref, watchEffect, createVNode, createTextVNode } from "vue";
-import { l as lodashExports } from "../../node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js";
+import { debounce } from "lodash";
 import "./index.css.js";
 import ColorPanel from "./ColorPanel.js";
 import InputNumberPlus from "./InputNumberPlus.js";
@@ -57,7 +57,7 @@ const SeedTokenPreview = /* @__PURE__ */ defineComponent({
     } = toRefs(props);
     const tokenPath = computed(() => ["token", tokenName.value]);
     const tokenValue = ref(color);
-    const debouncedOnChange = lodashExports.debounce((newValue) => {
+    const debouncedOnChange = debounce((newValue) => {
       var _a, _b;
       (_b = (_a = theme.value).onThemeChange) == null ? void 0 : _b.call(_a, {
         ...theme.value.config,

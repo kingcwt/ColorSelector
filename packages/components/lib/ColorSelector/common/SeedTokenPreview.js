@@ -1,6 +1,6 @@
 "use strict";
 const vue = require("vue");
-const lodash = require("../../node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js");
+const lodash = require("lodash");
 require("./index.css.js");
 const ColorPanel = require("./ColorPanel.js");
 const InputNumberPlus = require("./InputNumberPlus.js");
@@ -58,7 +58,7 @@ const SeedTokenPreview = /* @__PURE__ */ vue.defineComponent({
     } = vue.toRefs(props);
     const tokenPath = vue.computed(() => ["token", tokenName.value]);
     const tokenValue = vue.ref(color);
-    const debouncedOnChange = lodash.lodashExports.debounce((newValue) => {
+    const debouncedOnChange = lodash.debounce((newValue) => {
       var _a, _b;
       (_b = (_a = theme.value).onThemeChange) == null ? void 0 : _b.call(_a, {
         ...theme.value.config,

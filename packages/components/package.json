@@ -5,11 +5,11 @@
   "main": "lib/main.js",
   "module": "lib/main.mjs",
   "scripts": {
+    "postbuild": "node copyDeclarationFiles.js",
     "build": "vite build"
   },
   "files": [
-    "es",
-    "lib"
+    "es"
   ],
   "keywords": [
     "kingcwt",
@@ -21,6 +21,16 @@
   "license": "MIT",
   "typings": "es/index.d.ts",
   "devDependencies": {
+    "ant-design-vue": "^4.0.0",
+    "copy-cli": "^1.2.1",
+    "fs": "0.0.1-security",
+    "glob": "^10.3.3",
+    "lodash": "^4.17.21",
+    "path": "^0.12.7",
+    "tinycolor2": "^1.6.0",
     "vite-plugin-dts": "^3.3.1"
+  },
+  "dependencies": {
+    "vite": "^4.4.4"
   }
 }

@@ -14,8 +14,17 @@ export default defineConfig({
       enableObjectSlots: false,
     }),
     dts({
-      outputDir:'lib',
-    })
+      outputDir: "lib",
+      copyDtsFiles: true,
+      tsConfigFilePath: './tsconfig.json',
+      skipDiagnostics:false,
+      logDiagnostics:true
+  }),
+  dts({
+    outputDir: "es",
+    tsConfigFilePath: './tsconfig.json'
+}),
+
   ],
   build: {
     target: "modules",
@@ -25,7 +34,7 @@ export default defineConfig({
     //cssCodeSplit: true,
     rollupOptions: {
       //忽略打包vue和.less文件
-      external: ["vue", /\.less/],
+      external: ["vue", /\.less/,'lodash'],
       input: ["src/main.ts"],
       output: [
         {
@@ -37,21 +46,21 @@ export default defineConfig({
           dir: "es",
           preserveModulesRoot: "src",
         },
-        {
-          format: "cjs",
-          //不用打包成.mjs
-          entryFileNames: "[name].js",
-          //让打包目录和我们目录对应
-          preserveModules: true,
-          //配置打包根目录
-          dir: "lib",
-          preserveModulesRoot: "src",
-        },
+        // {
+        //   format: "cjs",
+        //   //不用打包成.mjs
+        //   entryFileNames: "[name].js",
+        //   //让打包目录和我们目录对应
+        //   preserveModules: true,
+        //   //配置打包根目录
+        //   dir: "lib",
+        //   preserveModulesRoot: "src",
+        // },
       ],
     },
     lib: {
       entry: "./index.ts",
-      formats: ["es", "cjs"],
+      formats: ["es"],
     },
   },
 });
