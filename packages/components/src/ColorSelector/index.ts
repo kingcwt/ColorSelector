@@ -1,6 +1,7 @@
 import type { App, Plugin } from "vue";
 import CustomColorSelector from "./common/index.tsx";
-
+import './common/vue-colorful/css/style.css';
+import './common/vue-colorful/css/styles.css.d.ts';
 type SFCWithInstall<T> = T & Plugin;
 
 const withInstall = <T>(comp: T) => {

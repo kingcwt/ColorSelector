@@ -1,6 +1,6 @@
 {
   "name": "kingcwt-ui-color-selector",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "",
   "scripts": {
     "build": "vite build"
@@ -17,19 +17,11 @@
   "author": "kingcwt",
   "license": "MIT",
   "typings": "es/index.d.ts",
-  "module":"es/index.js",
-  "unpkg":"es/index.js",
-  "devDependencies": {
-    "ant-design-vue": "^4.0.0",
-    "copy-cli": "^1.2.1",
-    "fs": "0.0.1-security",
-    "glob": "^10.3.3",
-    "lodash": "^4.17.21",
-    "path": "^0.12.7",
-    "tinycolor2": "^1.6.0",
-    "vite-plugin-dts": "^3.3.1"
-  },
+  "module": "es/index.js",
+  "main": "lib/index.js",
+  "unpkg": "es/index.js",
   "dependencies": {
+    "lodash": "^4.17.21",
     "vite": "^4.4.4"
   }
 }
