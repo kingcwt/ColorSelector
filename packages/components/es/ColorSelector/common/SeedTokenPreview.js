@@ -1,12 +1,9 @@
 import { defineComponent, toRefs, computed, ref, watchEffect, createVNode, createTextVNode } from "vue";
 import { debounce } from "lodash";
 import "./index.css.js";
+import { Typography, Popover, Switch } from "/Users/cuihongran/Desktop/ColorSelector/node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/index.js";
 import ColorPanel from "./ColorPanel.js";
 import InputNumberPlus from "./InputNumberPlus.js";
-import "../../node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/typography/index.js";
-import Typography from "../../node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/typography/Typography.js";
-import Popover from "../../node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/popover/index.js";
-import Switch from "../../node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/switch/index.js";
 const seedRange = {
   borderRadius: {
     min: 0,

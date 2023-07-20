@@ -1,5 +1,5 @@
 import type { App, Plugin } from "vue";
-import CustomColorSelector from "./ColorSelector/index.tsx";
+import CustomColorSelector from "./common/index.tsx";
 
 type SFCWithInstall<T> = T & Plugin;
 

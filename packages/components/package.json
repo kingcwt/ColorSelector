@@ -1,11 +1,8 @@
 {
   "name": "kingcwt-ui-color-selector",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
-  "main": "lib/main.js",
-  "module": "lib/main.mjs",
   "scripts": {
-    "postbuild": "node copyDeclarationFiles.js",
     "build": "vite build"
   },
   "files": [

@@ -1,15 +1,10 @@
 import { defineComponent, toRefs, ref, computed, createVNode, watchEffect, createTextVNode, watch } from "vue";
-import classNames from "../../node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/_util/classNames.js";
+import { Select, theme, Input, ConfigProvider, InputNumber } from "/Users/cuihongran/Desktop/ColorSelector/node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/index.js";
+import classNames from "/Users/cuihongran/Desktop/ColorSelector/node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/_util/classNames.js";
 import { HexColorPicker } from "./vue-colorful/components/HexColorPicker.js";
 import { RgbaColorPicker } from "./vue-colorful/components/RgbaColorPicker.js";
-import tinycolor from "../../node_modules/.pnpm/tinycolor2@1.6.0/node_modules/tinycolor2/esm/tinycolor.js";
+import tinycolor from "/Users/cuihongran/Desktop/ColorSelector/node_modules/.pnpm/tinycolor2@1.6.0/node_modules/tinycolor2/esm/tinycolor.js";
 import makeStyle from "./utils/makeStyle.js";
-import Select from "../../node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/select/index.js";
-import theme from "../../node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/theme/index.js";
-import "../../node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/input/index.js";
-import Input from "../../node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/input/Input.js";
-import ConfigProvider from "../../node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/config-provider/index.js";
-import InputNumber from "../../node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/input-number/index.js";
 const {
   useToken
 } = theme;

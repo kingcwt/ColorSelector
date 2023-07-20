@@ -1,7 +1,6 @@
 "use strict";
 const vue = require("vue");
-const index = require("../../node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/slider/index.js");
-const index$1 = require("../../node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/input-number/index.js");
+const index_js = require("/Users/cuihongran/Desktop/ColorSelector/node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/index.js");
 const InputNumberPlus = /* @__PURE__ */ vue.defineComponent({
   name: "InputNumberPlus",
   props: {
@@ -30,7 +29,7 @@ const InputNumberPlus = /* @__PURE__ */ vue.defineComponent({
           display: "flex",
           width: "200px"
         }
-      }, [vue.createVNode(index.default, {
+      }, [vue.createVNode(index_js.Slider, {
         "style": {
           flex: "0 0 120px",
           marginRight: "12px"
@@ -39,7 +38,7 @@ const InputNumberPlus = /* @__PURE__ */ vue.defineComponent({
         "min": min.value,
         "max": max.value,
         "onChange": props.onChange
-      }, null), vue.createVNode(index$1.default, {
+      }, null), vue.createVNode(index_js.InputNumber, {
         "value": value.value,
         "min": min.value,
         "max": max.value,

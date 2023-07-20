@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 // import ColorSelector from './ColorSelector/index'
-import {ColorSelector} from 'kingcwt-ui'
+import {ColorSelector} from 'kingcwt-ui-color-selector'
 
 const color = ref('#f5f6f7')
 

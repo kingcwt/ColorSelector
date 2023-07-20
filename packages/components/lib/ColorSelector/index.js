@@ -1,33 +1,10 @@
 "use strict";
-const vue = require("vue");
-const SeedTokenPreview = require("./common/SeedTokenPreview.js");
-const ColorSelector = /* @__PURE__ */ vue.defineComponent({
-  name: "ColorSelector",
-  props: {
-    color: {
-      type: String,
-      required: true
-    },
-    handleChangeColor: {
-      type: Function,
-      required: false
-    }
-  },
-  setup(props) {
-    const {
-      color,
-      handleChangeColor
-    } = vue.toRefs(props);
-    return () => {
-      return vue.createVNode(SeedTokenPreview, {
-        "color": color,
-        "handleChangeColor": handleChangeColor,
-        "theme": {
-          config: {}
-        },
-        "tokenName": "colorPrimary"
-      }, null);
-    };
-  }
-});
+const index = require("./common/index.js");
+const withInstall = (comp) => {
+  comp.install = (app) => {
+    app.component(comp.name, comp);
+  };
+  return comp;
+};
+const ColorSelector = withInstall(index);
 module.exports = ColorSelector;

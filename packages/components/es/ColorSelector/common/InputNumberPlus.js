@@ -1,6 +1,5 @@
 import { defineComponent, toRefs, createVNode } from "vue";
-import Slider from "../../node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/slider/index.js";
-import InputNumber from "../../node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/input-number/index.js";
+import { Slider, InputNumber } from "/Users/cuihongran/Desktop/ColorSelector/node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/index.js";
 const InputNumberPlus = /* @__PURE__ */ defineComponent({
   name: "InputNumberPlus",
   props: {

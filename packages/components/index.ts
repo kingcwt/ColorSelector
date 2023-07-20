@@ -1,4 +1,4 @@
-import ColorSelector from './src/main.ts'
+import ColorSelector from './src/ColorSelector/index.ts'
 
 
 export {

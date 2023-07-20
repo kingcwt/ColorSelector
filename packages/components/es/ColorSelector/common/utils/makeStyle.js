@@ -1,9 +1,8 @@
-import useStyleRegister from "../../../node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/_util/cssinjs/hooks/useStyleRegister.js";
-import "../../../node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/theme/internal.js";
+import { useStyleRegister } from "/Users/cuihongran/Desktop/ColorSelector/node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/_util/cssinjs/index.js";
+import { theme } from "/Users/cuihongran/Desktop/ColorSelector/node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/index.js";
+import { mergeToken } from "/Users/cuihongran/Desktop/ColorSelector/node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/theme/internal.js";
 import { computed } from "vue";
-import useConfigInject from "../../../node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/config-provider/hooks/useConfigInject.js";
-import theme from "../../../node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/theme/index.js";
-import { merge } from "../../../node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/theme/util/statistic.js";
+import useConfigInject from "/Users/cuihongran/Desktop/ColorSelector/node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/config-provider/hooks/useConfigInject.js";
 const makeStyle = (path, styleFn) => {
   return () => {
     const {
@@ -24,7 +23,7 @@ const makeStyle = (path, styleFn) => {
       };
     });
     return [useStyleRegister(componentInfo, () => {
-      const mergedToken = merge(token.value, {
+      const mergedToken = mergeToken(token.value, {
         rootCls: `.${rootCls}`
       });
       const styleInterpolation = styleFn(mergedToken);

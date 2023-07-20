@@ -2,12 +2,9 @@
 const vue = require("vue");
 const lodash = require("lodash");
 require("./index.css.js");
+const index_js = require("/Users/cuihongran/Desktop/ColorSelector/node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/index.js");
 const ColorPanel = require("./ColorPanel.js");
 const InputNumberPlus = require("./InputNumberPlus.js");
-require("../../node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/typography/index.js");
-const Typography = require("../../node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/typography/Typography.js");
-const index = require("../../node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/popover/index.js");
-const index$1 = require("../../node_modules/.pnpm/ant-design-vue@4.0.0_vue@3.3.4/node_modules/ant-design-vue/es/switch/index.js");
 const seedRange = {
   borderRadius: {
     min: 0,
@@ -85,7 +82,7 @@ const SeedTokenPreview = /* @__PURE__ */ vue.defineComponent({
         "class": "token-panel-pro-token-collapse-seed-block-sample"
       }, [vue.createVNode("div", {
         "class": "token-panel-pro-token-collapse-seed-block-sample-theme"
-      }, [vue.createVNode(Typography.default.Link, {
+      }, [vue.createVNode(index_js.Typography.Link, {
         "style": {
           fontSize: "12px",
           padding: 0,
@@ -98,7 +95,7 @@ const SeedTokenPreview = /* @__PURE__ */ vue.defineComponent({
         }
       }, {
         default: () => [vue.createTextVNode("重置")]
-      })]), tokenName.value.startsWith("color") && vue.createVNode(index.default, {
+      })]), tokenName.value.startsWith("color") && vue.createVNode(index_js.Popover, {
         "trigger": "click",
         "placement": "bottomRight",
         "overlayInnerStyle": {
@@ -134,7 +131,7 @@ const SeedTokenPreview = /* @__PURE__ */ vue.defineComponent({
         "onChange": handleChange,
         "min": seedRange[tokenName.value].min,
         "max": seedRange[tokenName.value].max
-      }, null), tokenName.value === "wireframe" && vue.createVNode(index$1.default, {
+      }, null), tokenName.value === "wireframe" && vue.createVNode(index_js.Switch, {
         "checked": tokenValue.value,
         "onChange": handleChange
       }, null)]);

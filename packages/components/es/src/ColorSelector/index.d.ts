@@ -1,4 +1,6 @@
-declare const ColorSelector: import("vue").DefineComponent<{
+import type { Plugin } from "vue";
+type SFCWithInstall<T> = T & Plugin;
+declare const ColorSelector: SFCWithInstall<import("vue").DefineComponent<{
     color: {
         type: StringConstructor;
         required: true;
@@ -16,5 +18,5 @@ declare const ColorSelector: import("vue").DefineComponent<{
         type: FunctionConstructor;
         required: false;
     };
-}>>, {}, {}>;
+}>>, {}, {}>>;
 export default ColorSelector;

@@ -1,6 +1,5 @@
 import { defineComponent, toRefs } from "vue";
-import SeedTokenPreview from "./common/SeedTokenPreview";
-import type {App,Plugin} from "vue"
+import SeedTokenPreview from "./SeedTokenPreview";
 
 const ColorSelector = defineComponent({
   name: "ColorSelector",
