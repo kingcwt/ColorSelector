@@ -34,4 +34,3 @@ const handleChangeColor = (str:string)=>{
   
   
 <img src='./view.png' style="width:600px" />
-  

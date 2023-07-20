@@ -10,6 +10,16 @@
 | color | String | The value of the current color |
 | handleChangeColor | Function | Method of manipulating colors |
 
+- install
+```
+// yarn
+yarn add kingcwt-ui-color-selector -D
+// pnpm
+pnpm i kingcwt-ui-color-selector -D
+// npm
+npm i kingcwt-ui-color-selector -D
+```
+
 -  Usage method
 
 ```vue
