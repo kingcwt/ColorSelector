@@ -9,7 +9,7 @@ import {
 } from "vue";
 import { debounce } from "lodash";
 import "./index.css";
-import { Popover, Switch, Typography } from "ant-design-vue";
+import { Popover, Switch } from "ant-design-vue";
 import ColorPanel from "./ColorPanel";
 import InputNumberPlus from "./InputNumberPlus";
 
@@ -90,7 +90,7 @@ const SeedTokenPreview = defineComponent({
     return () => {
       return (
         <div class="token-panel-pro-token-collapse-seed-block-sample">
-          <div class="token-panel-pro-token-collapse-seed-block-sample-theme">
+          {/* <div class="token-panel-pro-token-collapse-seed-block-sample-theme">
             <Typography.Link
               style={{
                 fontSize: "12px",
@@ -102,7 +102,7 @@ const SeedTokenPreview = defineComponent({
             >
               重置
             </Typography.Link>
-          </div>
+          </div> */}
           {tokenName.value.startsWith("color") && (
             <Popover
               trigger="click"
