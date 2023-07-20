@@ -1,14 +1,12 @@
 {
   "name": "kingcwt-ui-color-selector",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "",
   "scripts": {
     "build": "vite build"
   },
   "files": [
-    "es",
-    "index.js",
-    "index.d.ts"
+    "es"
   ],
   "keywords": [
     "kingcwt",
@@ -19,9 +17,8 @@
   "author": "kingcwt",
   "license": "MIT",
   "typings": "es/index.d.ts",
-  "module":"src/index.*",
-  "main":"src/index.*",
-  "unpkg":"src/index.*",
+  "module":"es/index.js",
+  "unpkg":"es/index.js",
   "devDependencies": {
     "ant-design-vue": "^4.0.0",
     "copy-cli": "^1.2.1",
