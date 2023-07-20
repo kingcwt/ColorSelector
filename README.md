@@ -30,3 +30,8 @@ const handleChangeColor = (str:string)=>{
 </template>
 ```
 
+- view
+  
+  
+<img src='./view.png' style="width:600px" />
+  
